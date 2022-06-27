@@ -1,7 +1,6 @@
 const caixaPrincipal = document.querySelector('#caixa')
 const caixaImage = document.querySelector('#image')
 const tenisArray = document.querySelectorAll('.tenis')
-const Black = '.black'
 
 tenisArray.forEach((element, index) => {
     
