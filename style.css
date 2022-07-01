@@ -1,66 +1,116 @@
-.content-main{
-    width: 700px;
-    height: 700px;
-    background-color: cadetblue;
-    justify-content: flex-end;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#caixa{
-    width: 400px;
-    margin: 0 auto;  
-    background-color: coral;
-    height: 400px;
-}
-.tenis{
-    background-color: rgb(155, 23, 155);
-    width: 100%;
-    height: 25%;
-    display: flex;
-}
-
-.red{
-    height: 250px;
-    width: 250px;
-    background-color: red;
-    background-image: url('luufy.jfif');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: contain;
-    background-size: cover;
-}
-.blue{
-    height: 250px;
-    width: 250px;
-    background-color: rgb(9, 113, 225);
-    background-image: url('t.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-}
-
-.yellow{
-    height: 250px;
-    width: 250px;
-    background-color: rgb(20, 216, 226);
-    background-image: url('aa.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-}
-
-.black{
-    background-color: black;
-}
-
-
-/*
-.tempo{
-    width: 100%;
-    height: 250px;
+body{
     background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-*/
+.box-main{
+    margin: 0 auto;
+ width: 375px;
+ height: 812px;
+ background-color: #000;
+}
+
+.infors{
+    margin-top: 10px;
+    width: 100%;
+    height:300px;
+    padding: 10px;
+   
+    margin-bottom: 25px;
+}
+.infors img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+.infors .titulo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fucoes{
+align-items: center;
+justify-content:center ;
+width: 100%;
+
+height: 20%;
+display: flex;
+flex-direction: column;
+}
+
+.fucoes .buttoes{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #444;
+}
+
+.prev img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.play img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.next img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.next:hover, .prev:hover , .play:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+
+    border-radius: 50%;
+}
+
+.pause{
+    display: none;
+    
+    width: 35px;
+    height: 35px;
+}
+
+.barra{
+    width: 100%;
+    height: 20%;
+   border: 1px solid #ccc;
+    display: flex;
+    background-color: #444;
+    margin-bottom: 15px;
+}
+
+progress{
+    height: 100%;
+    width: 100%;
+   border-radius: 15px;
+   background-color: #444;
+
+}
+
+.time{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
